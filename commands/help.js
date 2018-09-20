@@ -39,7 +39,7 @@ b!prefix - Set a custom prefix for the bot.
   
   let helpeEmbed = new Discord.RichEmbed()
   .setTitle("Economy")
-  .setColor("#fdff14")
+  .setColor("#f000ff")
   .setDescription(`b!coins - Check how many coins you have.
 b!level - Check what level you are at and tells you how many xp you need to level up.`);
 
