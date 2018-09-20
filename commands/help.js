@@ -27,7 +27,6 @@ b!botinfo - Information about the bot.
 b!addrole - Adds a role to someone.
 b!removerole - Deletes a role from someone.
 b!prefix - Set a custom prefix for the bot.
-b!coins - Check how many coins you have.
 `);
 
   let helpsEmbed = new Discord.RichEmbed()
@@ -37,9 +36,16 @@ b!coins - Check how many coins you have.
   .addField("Support and Vote the bot!", `https://discordbots.org/bot/489600241406967810`)
   .addField("Add the bot to your server!", `https://discordapp.com/oauth2/authorize?client_id=489600241406967810&scope=bot`)
   .setFooter(`Made by: Blaze#5023`, `https://cdn.discordapp.com/avatars/470344523093114890/1d05505b22bd041d1fae1e29233d48bb.png?size=128`);
+  
+  let helpeEmbed = new Discord.RichEmbed()
+  .setTitle("Economy")
+  .setColor("#fdff14")
+  .setDescription(`b!coins - Check how many coins you have.
+b!level - Check what level you are at and tells you how many xp you need to level up.`);
 
   message.channel.send(helpmEmbed);
   message.channel.send(helpfEmbed);
+  message.channel.send(helpeEmbed);
   message.channel.send(helpbEmbed);
   message.channel.send(helpsEmbed);
 }
