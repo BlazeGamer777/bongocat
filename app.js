@@ -73,12 +73,6 @@ bot.on("message", async message => {
 
   if(nxtLvl <= xp[message.author.id].xp){
     xp[message.author.id].level = curlvl + 1;
-    let lvlup = new Discord.RichEmbed()
-    .setTitle("❗ Level Up! ❗")
-    .setColor("#00FF00")
-    .addField("You leveled up! New Level:", xp[message.author.id].level);
-
-    message.channel.send(lvlup);
   }
 
   fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
