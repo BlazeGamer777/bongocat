@@ -33,7 +33,7 @@ b!prefix - Set a custom prefix for the bot.
   .setTitle("Misc")
   .setColor("#e50d0d")
   .addField("Join the support server!", `https://discord.gg/RMRU7Y7`)
-  .addField("Support and Vote the bot!", `New link coming soon!`)
+  .addField("Support and Vote the bot!", `https://discordbots.org/bot/489600241406967810`)
   .addField("Add the bot to your server!", `https://discordapp.com/oauth2/authorize?client_id=489600241406967810&scope=bot`)
   .setFooter(`Made by: Blaze#5023`, `https://cdn.discordapp.com/avatars/470344523093114890/1d05505b22bd041d1fae1e29233d48bb.png?size=128`);
   
