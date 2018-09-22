@@ -25,6 +25,8 @@ fs.readdir("./commands/", (err, files) => {
 
 });
 
+let statuses = ['https://discord.gg/RMRU7Y7', 'Prefix: b! | b!help', `Bongos Rule!`];
+
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online! It's on ${bot.guilds.size} servers!`);
     setInterval(function() {
