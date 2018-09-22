@@ -27,7 +27,10 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online! It's on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("the bongos. | b!help", {type: "STREAMING"});
+    setInterval(function() {
+    let status = statuses[Math.floor(Math.random()*statuses.length)];
+    bot.user.setActivity(status, {type: "STREAMING"});
+  }, 5000)
 });
 
 bot.on("message", async message => {
