@@ -17,7 +17,9 @@ b!tempmute - Temporarily mutes someone.`);
     b!8ball - Get your answers now!
     b!dog - HSSSSSSSSSSSSSSSSSSSSSSSSH (Get a random dog.)
 b!cat - A random cat!
-b!meme - Get a old meme. Not from reddit. RIP`);
+b!meme - Get a old meme. Not from reddit. RIP
+b!pokemon - Get a sprite of a pokemon!
+b!shinypokemon - Get a shiny sprite of a pokemon!`);
 
   let helpbEmbed = new Discord.RichEmbed()
   .setTitle("Bot")
