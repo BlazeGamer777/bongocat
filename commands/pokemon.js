@@ -5,6 +5,7 @@ module.exports.run = async (bot, message, args) => {
   let pEmbed = new Discord.RichEmbed()
   .setTitle("Here is your pokemon!")
   .setColor('RANDOM')
+  .addField("Name:", pokemon)
   .setThumbnail(`http://www.pokestadium.com/sprites/xy/`+ pokemon +`.gif`);
 
   message.channel.send(pEmbed);
