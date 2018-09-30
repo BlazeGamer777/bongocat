@@ -14,12 +14,13 @@ b!tempmute - Temporarily mutes someone.`);
   .setTitle("Fun")
   .setColor("#f9f613")
   .setDescription(`b!ping - Bong!
-    b!8ball - Get your answers now!
-    b!dog - HSSSSSSSSSSSSSSSSSSSSSSSSH (Get a random dog.)
+b!8ball - Get your answers now!
+b!dog - HSSSSSSSSSSSSSSSSSSSSSSSSH (Get a random dog.)
 b!cat - A random cat!
 b!meme - Get a old meme. Not from reddit. RIP
 b!pokemon - Get a sprite of a pokemon!
-b!shinypokemon - Get a shiny sprite of a pokemon!`);
+b!shinypokemon - Get a shiny sprite of a pokemon!
+b!bird - Tweet Tweet!`);
 
   let helpbEmbed = new Discord.RichEmbed()
   .setTitle("Bot")
