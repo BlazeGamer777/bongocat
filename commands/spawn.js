@@ -6,6 +6,7 @@ module.exports.run = async (bot, message, args) => {
   let pokespawnE = new Discord.RichEmbed()
   .setTitle("A pokemon spawned!")
   .setColor('RANDOM')
+  .setField("What to do?", 'Nothing right now.')
   .setThumbnail(`http://www.pokestadium.com/sprites/xy/`+ pokeres +`.gif`);
   
   message.channel.send(pokespawnE)
