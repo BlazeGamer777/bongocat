@@ -7,8 +7,8 @@ module.exports.run = async (bot, message, args) => {
   .setTitle("A pokemon spawned!")
   .setColor('RANDOM')
   .addField("What to do?", 'Nothing right now.')
-  .setThumbnail(`http://www.pokestadium.com/sprites/xy/`+ pokeres +`.gif`);
-  console.log(`http://www.pokestadium.com/sprites/xy/`+ pokeres +`.gif`);
+  .setThumbnail(`http://www.pokestadium.com/sprites/xy/`+ pokes[pokeres] +`.gif`);
+  console.log(`http://www.pokestadium.com/sprites/xy/`+ pokes[pokeres] +`.gif`);
   
   message.channel.send(pokespawnE)
 }
