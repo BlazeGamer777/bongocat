@@ -8,7 +8,6 @@ module.exports.run = async (bot, message, args) => {
   .setColor('RANDOM')
   .addField("What to do?", 'Nothing right now.')
   .setThumbnail(`http://www.pokestadium.com/sprites/xy/`+ pokes[pokeres] +`.gif`);
-  console.log(`http://www.pokestadium.com/sprites/xy/`+ pokes[pokeres] +`.gif`);
   
   message.channel.send(pokespawnE)
 }
