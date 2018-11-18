@@ -9,7 +9,7 @@ let xp = require("./xp.json");
 let level = require("./xp.json");
 const Discordbots = require("discordbotslist.com");
 
-Discordbots.postServerCount("6fd10d-58d7c2-cbc09c-2aee33-9a5fab", bot.guilds.size);
+Discordbots.postServerCount("d4e43e-2c01a0-73ea3c-bd266b-12cdb9", bot.guilds.size);
 
 fs.readdir("./commands/", (err, files) => {
   if(err) console.log(err);
