@@ -8,8 +8,18 @@ let coins = require("./coins.json");
 let xp = require("./xp.json");
 let level = require("./xp.json");
 const Discordbots = require("discordbotslist.com");
+let axios = require("axios");
 
-Discordbots.postServerCount("d4e43e-2c01a0-73ea3c-bd266b-12cdb9", bot.guilds.size);
+axios({
+        method: 'POST',
+        url: `https://discordbotslist.com/api/post.php`,
+        headers: {
+            "Authorization" : `b311b6-45b6ee-ce5411-727ba7-4eb4d2`
+          },
+        data: {
+            "guilds": bot.guilds.size,
+        }
+})
 
 fs.readdir("./commands/", (err, files) => {
   if(err) console.log(err);
