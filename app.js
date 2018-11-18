@@ -10,17 +10,6 @@ let level = require("./xp.json");
 const Discordbots = require("discordbotslist.com");
 let axios = require("axios");
 
-axios({
-        method: 'POST',
-        url: `https://discordbotslist.com/api/post.php`,
-        headers: {
-            "Authorization" : `b311b6-45b6ee-ce5411-727ba7-4eb4d2`
-          },
-        data: {
-            "guilds": bot.guilds.size,
-        }
-})
-
 fs.readdir("./commands/", (err, files) => {
   if(err) console.log(err);
 
@@ -41,6 +30,18 @@ fs.readdir("./commands/", (err, files) => {
 let statuses = ['https://discord.gg/RMRU7Y7', 'Prefix: b! | b!help', `Bongos Rule!`, `bongo.cat`];
 
 bot.on("ready", async () => {
+       
+        axios({
+        method: 'POST',
+        url: `https://discordbotslist.com/api/post.php`,
+        headers: {
+            "Authorization" : `b311b6-45b6ee-ce5411-727ba7-4eb4d2`
+          },
+        data: {
+            "guilds": bot.guilds.size,
+        }
+})
+       
   console.log(`${bot.user.username} is online! It's on ${bot.guilds.size} servers!`);
     setInterval(function() {
     let status = statuses[Math.floor(Math.random()*statuses.length)];
