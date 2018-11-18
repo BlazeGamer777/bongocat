@@ -9,6 +9,7 @@
   "author": "Blaze",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "discord.js": "^11.4.2",
     "discordbotslist.com": "0.0.4",
     "ms": "^2.1.1",
